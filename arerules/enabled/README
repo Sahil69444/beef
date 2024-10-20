@@ -1,2 +1,19 @@
-Move here the ARE rule files that you want to pre-load when BeEF starts.
-Make sure they are .json files (any other file extension is ignored).
+{
+  "name": "Google Phishing",
+  "author": "jking",
+  "modules": [
+    {
+      "name": "gmail_phishing",
+      "condition": null,
+      "code": null,
+      "options": {
+        "xss_hook_url": "https://myaccount.google.com/",
+        "logout_gmail_interval": 10000,
+        "wait_seconds_before_redirect": 1000
+      }
+    }
+  ],
+  "execution_order": [0],
+  "execution_delay": [0],
+  "chain_mode": "sequential"
+}
